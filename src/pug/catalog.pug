@@ -1,0 +1,321 @@
+extends _layout
+
+block variables
+  - var pageTitle = "Двери";
+
+block content
+  // Content
+  div.main-wrap
+    //.webp-img(data-webp="img/Rectangle5.webp" data-img="img/Rectangle5.jpg")
+    //.block-top-wrap.webp-img(data-webp="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.webp"
+    //data-img="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.jpg")
+
+    .block-top
+      .catalog.catalog-page-catalog
+        .catalog__search
+          input(type="text" placeholder="Двери белые").catalog__search-field
+          a(href="#").catalog__search-btn
+        .catalog__inner
+          ul.catalog__list
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--title Каталог дверей
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Дверная продукция
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Образцы отделок
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Двери по назначению
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Металлоконструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Кованые изделия
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Окна-Балконы
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Типы конструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Фурнитура
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+      .catalog-page
+        .catalog-page__inner
+          .block-title
+            h2 Изготовление металлических дверей от производителя в Москве
+          .catalog-page-search__inner
+            .catalog-page-search__form
+              .catalog-page-search__select-wrap
+                .catalog-page-search__select
+                  select
+                    option Отделка снаружи:
+                .catalog-page-search__select
+                  select
+                    option Отделка изнутри:
+              .catalog-page-search__price-range-btn-wrap
+                .catalog-page-search__price-range
+                  .catalog-page-search__price Стоимость(руб)
+                  #slider-range
+                  .catalog-page-search__price-fields
+                    input#slider-out(type="text" value="0").search-doors__price-start
+                    input#slider-out-max(type="text" value="5000").search-doors__price-end
+                a.catalog-page-search__btn(href="#") Найти
+          .catalog-page__sorting
+            .catalog-page__sorting-inner
+              a(href="#").catalog-page__sorting-item По отделке
+              a(href="#").catalog-page__sorting-item По назначению
+              a(href="#").catalog-page__sorting-item по типу конструкции
+              a(href="#").catalog-page__sorting-item Все
+        .catalog-page__categories
+          .block-title
+            h2 По отделке
+          .catalog-page__categories-inner
+            ul.catalog-page__categories-list
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-1.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С зеркалом
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-2.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С массивом дуба
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-3.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption Со стеклопакетом
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-4.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С панелями МДФ
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-1.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С рисунком на металле
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-2.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С фрамугой
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-3.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С ковкой и литьём
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-4.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С фотопечатью
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-1.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С вагонкой
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-2.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С шумоизоляцией
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-3.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption С терморазрывом
+              li.catalog-page__categories-item
+                a(href="#").catalog-page__categories-link
+                  .catalog-page__categories-img-wrap
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-4.jpg").catalog-page__categories-img.b-lazy
+                  .catalog-page__categories-caption Со скрытыми петлями
+            a(href="javascript:void(0);").catalog-page__btn-more Больше категорий
+    .catalog-page__horizontal.b-lazy(data-src="img/catalog-categor-horizontal.jpg")
+      .catalog-page__horizontal-inner
+        .catalog-page__horizontal-title-small Входные металлические двери оптом от завода производителя Статус
+        .catalog-page__horizontal-title Входные металлические двери оптом от завода производителя Статус
+        .catalog-page__horizontal-txt
+          p.catalog-page__horizontal-desc Порошковое напыление с двух сторон от 9000 рублей;
+          p.catalog-page__horizontal-desc Порошковое напыпление- панели МДФ от 13000 рублей;
+          p.catalog-page__horizontal-desc МДФ ПВХ - МДФ ПВХ от 15000 рублей;
+          p.catalog-page__horizontal-desc Порошковое напыление - МДФ с зеркалом от 17000 рублей.
+          p.catalog-page__horizontal-desc Порошковое напыление - ламинат от 12500 рублей
+    .catalog-page__categories
+      .block-title.block-title-margin-auto
+        h2 По назначению
+      .catalog-page__categories-inner
+        ul.catalog-page__categories-list
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-5.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Парадные
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-6.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Тамбурные
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-7.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Технические
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-8.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Противопожарные
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-5.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Утепленные
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-6.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption В квартиру
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-7.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption В подъезд
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-8.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Для загородного дома
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-5.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Уличные
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-6.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Для дачи
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-7.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption В кассу
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-8.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption В офис
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-5.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Уличные
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-6.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Для дачи
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-7.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption В кассу
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-8.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption В офис
+        a(href="javascript:void(0);").catalog-page__btn-more Больше категорий
+
+
+    .catalog-page__horizontal-bot.b-lazy(data-src="img/catalog-categor-horizontal2.jpg")
+      .catalog-page__horizontal-bot-inner
+        .catalog-page__horizontal-bot-txt
+          p.catalog-page__horizontal-bot-desc Если вам надоело ездить по всем магазинам и салонам дверей и вы нигде не можете найти ту дверь которая вас бы устроила?
+          p.catalog-page__horizontal-bot-desc Мы предлагаем решить вашу проблему-изготовить качественную металлическую дверь на заказ со всеми вашими пожеланиями. Так как вся наша продукция делается с нуля, мы можем воплотить в реальность ваши идеи и пожелания.
+
+    .catalog-page__categories
+      .block-title.block-title-margin-auto
+        h2 по типу конструкции
+      .catalog-page__categories-inner
+        ul.catalog-page__categories-list
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-9.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Одностворчатые
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-10.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Полуторные
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-11.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption C фрамугой
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-12.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Арочные
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-13.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Cо скрытыми петлями
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-14.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Двухстворчатые
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-15.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Взломостойкие М1, М2, М3, М4, М5
+          li.catalog-page__categories-item
+            a(href="#").catalog-page__categories-link
+              .catalog-page__categories-img-wrap
+                img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/catalog-categor-16.jpg").catalog-page__categories-img.b-lazy
+              .catalog-page__categories-caption Нержавеющие
+        a(href="javascript:void(0);").catalog-page__btn-more Больше категорий
+    .catalog-page__bottom-caption
+      .catalog-page__bottom-caption-inner
+        .catalog-page__bottom-caption-txt
+          .catalog-page__bottom-caption-title Изготовление металлических дверей от производителя в Москве
+          .catalog-page__bottom-caption-desc Если вы ищите качественные входные двери и никак не можете подобрать отделку и замки которые вас бы удовлетворили, то наша компания готова вам помочь с изготовлением входных дверей на заказ. Вы можете купить нашу продукцию как с производства, так и воспользоваться нашими услугами, а именно бесплатный замер, доставка и установка. Мы выезжаем и осуществляем свою услугу по всей Москве и Московской области. Возможна отправка двери в регионы любыми транспортными компаниями.
+
+    .contact-us
+      .contact-us__title Поможем подобрать оптимальное  решение для вашего дома и бизнеса
+      .contact-us__content
+        .contact-us__img
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/23.png"  alt="img").b-lazy
+        .contact-us__form
+          form
+            .contact-us__form-inner
+              .contact-us__form-left
+                input(type="text" placeholder="Имя")
+                input.phone(type="text" placeholder="+7 (___) ___ - __ - __")
+                input(type="text" placeholder="E-mail")
+
+              .contact-us__form-right
+                textarea(placeholder="Комментарий к заявке")
+            input(type="submit" value="Получить скидку").contact-us__btn
+            .contact-us__caption Вызов замерщика бесплатен

@@ -16,6 +16,13 @@ Inputmask({"mask": "+7 (999) 999 - 99 - 99"}).mask('.phone');
 
 $(document).ready(function () {
 
+    // $('.catalog-page__btn-more').click(function(e){
+    //     let btn = e.target;
+    //     $(btn).toggleClass('catalog-page__btn-more--toggle');
+    //     let parent = e.target.closest('.catalog-page__categories-inner');
+    //     $(parent).find('.catalog-page__categories-item:nth-child(n+5)').slideToggle('');
+    // });
+
     $(document).on('click', '.owl-next', function () {
         setTimeout(function () {
             var bLazy = new Blazy({});
@@ -180,9 +187,6 @@ $(document).ready(function () {
     //     }
     //
     // });
-
-
-
 
 });
 
