@@ -1,0 +1,532 @@
+extends _layout
+
+block variables
+  - var pageTitle = "Двери";
+
+block content
+  // Content
+  div.main-wrap
+    //.webp-img(data-webp="img/Rectangle5.webp" data-img="img/Rectangle5.jpg")
+    //.block-top-wrap.webp-img(data-webp="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.webp"
+    //data-img="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.jpg")
+    .block-top
+      .catalog
+        .catalog__search
+          input(type="text" placeholder="Двери белые").catalog__search-field
+          a(href="#").catalog__search-btn
+        .catalog__inner
+          ul.catalog__list
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--title Каталог дверей
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Образцы отделок
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Наши работы
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Металлоконструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Кованые изделия
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Окна-Балконы
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Типы конструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Фурнитура
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+
+      .slider.owl-carousel
+        .slider__item
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/16.png" alt="img").b-lazy
+          .slider__txt
+            .slider__title Изготовление дверей
+            .slider__caption пластиковых и алюминиевых изделий
+            .slider__caption Лучшее предложение безопасности  комфорта и дизайна
+            a(href="#").slider__btn  Узнать стоимость
+        .slider__item
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/16.png" alt="img").b-lazy
+          .slider__txt
+            .slider__title Изготовление дверей
+            .slider__caption пластиковых и алюминиевых изделий
+            .slider__caption Лучшее предложение безопасности  комфорта и дизайна
+            a(href="#").slider__btn  Узнать стоимость
+
+      .call-block
+        .call-block__title Оставляйте заявку  на бесплатный  выезд замерщика
+        .call-block__phone
+          input(type="text" placeholder="+7 (___) ___ - __ - __").call-block__field.phone
+        a(href="#").call-block__btn Бесплатный замер
+
+
+    .advantages
+      .block-title
+        h2 Почему стоит работать именно с нами?
+      .advantages__items
+        .advantages__item
+          .advantages__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/5.png" alt="img").b-lazy
+          .advantages__title Консультация
+          .advantages__caption.
+            Менеджер предоставит каталоги
+            а также поможет выбрать
+            межкомнатную дверь под заказ
+        .advantages__item
+          .advantages__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/4.png" alt="img").b-lazy
+          .advantages__title Аккуратность
+          .advantages__caption.
+            Мы работаем аккуратно, чтобы
+            сберечь первоклассный вид
+            вери и отделку помещений
+        .advantages__item
+          .advantages__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/1.png" alt="img").b-lazy
+          .advantages__title Замер
+          .advantages__caption.
+            Соблюдения
+            правил при обмерах
+            дверного проема.
+        .advantages__item
+          .advantages__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/3.png" alt="img").b-lazy
+          .advantages__title Профессионализм
+          .advantages__caption.
+            Мастера, -
+            высококвалифицированные
+            профессионалы своего дела.
+        .advantages__item
+          .advantages__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/6.png" alt="img").b-lazy
+          .advantages__title Установка
+          .advantages__caption.
+            Бригада профессиональных
+            монтажников с опытом установки
+            дверных конструкций
+        .advantages__item
+          .advantages__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/2.png" alt="img").b-lazy
+          .advantages__title Гарантия
+          .advantages__caption.
+            На все наши изделия
+            имеется гарантия
+
+    .solutions
+      .block-title
+        h2 лучшие решения
+      .solutions__items
+        a(href="#").solutions__item.solutions__w-2
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/9.png" alt="img").b-lazy
+          .solutions__cattion Шумоизоляционные двери
+        a(href="#").solutions__item.solutions__w-1
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/15.png" alt="img").b-lazy
+          .solutions__cattion Двери в подъезд
+        a(href="#").solutions__item.solutions__w-1
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/13.png" alt="img").b-lazy
+          .solutions__cattion Парадные двери
+        a(href="#").solutions__item.solutions__w-1
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/14.png" alt="img").b-lazy
+          .solutions__cattion Двери в квартиру
+        a(href="#").solutions__item.solutions__w-2
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/8.png" alt="img").b-lazy
+          .solutions__cattion Двери с терморазрывом
+        a(href="#").solutions__item.solutions__w-1
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/12.png" alt="img").b-lazy
+          .solutions__cattion Входная дверь для дачи
+        a(href="#").solutions__item.solutions__w-1
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/11.png" alt="img").b-lazy
+          .solutions__cattion Двери со стеклом и ковкой
+        a(href="#").solutions__item.solutions__w-1
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/10.png" alt="img").b-lazy
+          .solutions__cattion Противопожарные двери
+        a(href="#").solutions__item.solutions__w-2
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/7.png" alt="img").b-lazy
+          .solutions__cattion Тамбурные двери
+
+    .search-doors
+      .block-title
+        h2 Подбор дверей
+      .search-doors__inner
+        .search-doors__form
+          .search-doors__select
+            select
+              option Отделка снаружи:
+          .search-doors__select
+            select
+              option Отделка изнутри:
+          .search-doors__price Стоимость(руб)
+          .search-doors__price-range
+            #slider-range
+            .search-doors__price-fields
+              input#slider-out(type="text" value="0").search-doors__price-start
+              input#slider-out-max(type="text" value="5000").search-doors__price-end
+          a.search-doors__btn(href="#") Найти
+
+        .search-doors__bunner
+          .search-doors__bunner-inner
+            .search-doors__bunner-txt.
+              В каталоге  размещено более 1000 моделей дверей:
+              для квартир, для офиса, коттеджей, тамбурные,
+              технические, противопожарные, с повышенной теплоизоляцией
+            a.search-doors__bunner-btn(href="#") Перейти в каталог
+
+
+    .how-order
+      .block-title
+        h2 Как заказать
+      .how-order__items
+        .how-order__item
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/21.png" alt="img").b-lazy
+          h3 Звонок
+          span (Оформление заказа)
+          .how-order__item_hover Бригада профессиональных  монтажников с опытом установки  дверных конструкций
+        .how-order__item.how-order__item--arrow
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/arrow.png" alt="img").b-lazy
+        .how-order__item
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/20.png" alt="img").b-lazy
+          h3 Бесплатный замер
+          .how-order__item_hover Бригада профессиональных  монтажников с опытом установки  дверных конструкций
+        .how-order__item.how-order__item--arrow
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/arrow.png" alt="img").b-lazy
+        .how-order__item
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/19.png" alt="img").b-lazy
+          h3 Изготовление
+          .how-order__item_hover Бригада профессиональных  монтажников с опытом установки  дверных конструкций
+        .how-order__item.how-order__item--arrow
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/arrow.png" alt="img").b-lazy
+        .how-order__item
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/18.png" alt="img").b-lazy
+          h3 Доставка и установка
+          .how-order__item_hover Бригада профессиональных  монтажников с опытом установки  дверных конструкций
+
+    .media
+      .block-title
+        h2 Производство дверей
+      .media__inner
+        .media__txt
+          p.
+            К современным входным и межкомнатным дверям человек выдвигает
+            немало требований – в первую очередь это тепло- и звукоизоляция,
+            экономия пространства и удобство в эксплуатации. Всем этим
+            требованиям отвечают не все разновидности дверей – можно смело
+            сказать, что только единицы. К таким дверям можно отнести разве что
+            автоматические двери, преимущества которых переоценить сложно. В
+            этой статье вместе с сайтом dveridoma.net мы поговорим о
+            преимуществах автоматических дверей, ознакомимся с их
+            разновидностями и изучим принцип работы.
+          a(href="#").media__txt-btn Перейти к видео
+
+        .media__video
+          iframe(  data-src='https://www.youtube.com/embed/TWLPoSNG5p0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='').b-lazy
+
+
+
+    .bestsellers
+      .block-title.block-title--white
+        h2 Хиты продаж
+      .bestsellers__items.owl-carousel
+        .bestsellers__item
+          a(href="#").bestsellers__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/door.jpg" alt="img").b-lazy
+          .bestsellers__desc
+            a(href="#").bestsellers__title Dveri-termo-05
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка снаружи:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка изнутри:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Уплотнитель двери
+                div "Е" 3 мм. + "D" 9 мм. с 4 сторон
+            .bestsellers__price Цена от 40000 руб.
+          .bestsellers__bottom
+            .bestsellers__buttons
+              //a(href="#").bestsellers__edit
+              a(href="#").bestsellers__like
+              a(href="#").bestsellers__cart
+            .bestsellers__buy
+              a(href="#").bestsellers__link Вызов замерщика
+              a(href="#").bestsellers__link Купить в один клик
+
+        .bestsellers__item
+          a(href="#").bestsellers__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/door.jpg" alt="img").b-lazy
+          .bestsellers__desc
+            a(href="#").bestsellers__title Dveri-termo-05
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка снаружи:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка изнутри:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Уплотнитель двери
+                div "Е" 3 мм. + "D" 9 мм. с 4 сторон
+            .bestsellers__price Цена от 40000 руб.
+          .bestsellers__bottom
+            .bestsellers__buttons
+              //a(href="#").bestsellers__edit
+              a(href="#").bestsellers__like
+              a(href="#").bestsellers__cart
+            .bestsellers__buy
+              a(href="#").bestsellers__link Вызов замерщика
+              a(href="#").bestsellers__link Купить в один клик
+
+        .bestsellers__item
+          a(href="#").bestsellers__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/door.jpg" alt="img").b-lazy
+          .bestsellers__desc
+            a(href="#").bestsellers__title Dveri-termo-05
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка снаружи:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка изнутри:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Уплотнитель двери
+                div "Е" 3 мм. + "D" 9 мм. с 4 сторон
+            .bestsellers__price Цена от 40000 руб.
+          .bestsellers__bottom
+            .bestsellers__buttons
+              //a(href="#").bestsellers__edit
+              a(href="#").bestsellers__like
+              a(href="#").bestsellers__cart
+            .bestsellers__buy
+              a(href="#").bestsellers__link Вызов замерщика
+              a(href="#").bestsellers__link Купить в один клик
+
+
+    .questions
+      .block-title
+        h2 Часто задаваемые вопросы
+      .questions__items
+        .questions__block
+          a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+          ul.questions__list
+            li.questions__item.
+              Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+        .questions__block
+          a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+          ul.questions__list
+            li.questions__item.
+              Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+        .questions__block
+          a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+          ul.questions__list
+            li.questions__item.
+              Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+        .questions__block
+          a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+          ul.questions__list
+            li.questions__item.
+              Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+
+      .questions__btn
+        a(href="#") Перейти на страницу Вопрос/Ответ
+
+    .gallery
+      .block-title
+        h2 Фотогалерея работ завода "СТАТУС"
+      .gallery__inner
+        .gallery__items.owl-carousel
+          a(href="img/d1.jpg" class="fancybox" data-fancybox="gallery" title="Sample title").gallery__item
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d1.jpg" alt="img").b-lazy
+          a(href="img/d2.jpg" class="fancybox" data-fancybox="gallery" title="Sample title").gallery__item
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d2.jpg" alt="img").b-lazy
+          a(href="img/d3.jpg" class="fancybox" data-fancybox="gallery" title="Sample title").gallery__item
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d3.jpg" alt="img").b-lazy
+          a(href="img/d4.jpg" class="fancybox" data-fancybox="gallery" title="Sample title").gallery__item
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d4.jpg" alt="img").b-lazy
+          a(href="img/d5.jpg" class="fancybox" data-fancybox="gallery" title="Sample title").gallery__item
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d5.jpg" alt="img").b-lazy
+          a(href="img/d6.jpg" class="fancybox" data-fancybox="gallery" title="Sample title").gallery__item
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d6.jpg" alt="img").b-lazy
+          a(href="img/d7.jpg" class="fancybox" data-fancybox="gallery" title="Sample title").gallery__item
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d7.jpg" alt="img").b-lazy
+          a(href="img/d8.jpg" class="fancybox" data-fancybox="gallery" title="Sample title").gallery__item
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d8.jpg" alt="img").b-lazy
+        .gallery__btn
+          a(href="#") Перейти в галерею
+
+    .rewievs
+      .block-title
+        h2 Отзывы
+      .rewievs__inner
+        .rewievs__items
+          .rewievs__item
+            .rewievs__title Анна Борисенко
+            .rewievs__txt.
+              Выбрала двери Выбор для офиса. Честно, не стала бы писать отзыв, если бы нас не попытались взломать. Замок покорежили, дверь немного поцарапали, но выдержала! Я очень вам благодарна за работу, никогда не думала, что меня спасет обычная дверь. Хотелось бы еще сказать спасибо ребятам, которые приезжали для монтажа и потом по гарантийному обслуживанию! Аккуратные и вежливые ребята, спасибо вам!
+
+          .rewievs__item
+            .rewievs__title Вадим Довгань
+            .rewievs__txt.
+              Меня жена попросила найти красивую дверь с зеркалом внутри, а остальные качества подбирал уже сам. Остановился на двери «Выбор-5 - Зеркало». Почему? Она полностью соответствовала описанию: усиленная конструкция и отличная тепло и звукоизоляция, замки высшего класса и ночная задвижка, фиксаторы противосъемные. По внешнему виду приглянулся беленый дуб, и не прогадали. Насчет зеркала – зря некоторые боятся, что его можно разбить. Просто нужно быть аккуратным, и тогда на нем не будет и царапины! Еще очень понравился подход менеджера, вникающего во все нюансы. Сразу виден профессионализм и знание продукта. Спасибо вам огромное!
+
+          .rewievs__item
+            .rewievs__title Семен Бунеев
+            .rewievs__txt.
+              Меня жена попросила найти красивую дверь с зеркалом внутри, а остальные качества подбирал уже сам. Остановился на двери «Выбор-5 - Зеркало». Почему? Она полностью соответствовала описанию: усиленная конструкция и отличная тепло и звукоизоляция, замки высшего класса и ночная задвижка, фиксаторы противосъемные. По внешнему виду приглянулся беленый дуб, и не прогадали. Насчет зеркала – зря некоторые боятся, что его можно разбить. Просто нужно быть аккуратным, и тогда на нем не будет и царапины! Еще очень понравился подход менеджера, вникающего во все нюансы. Сразу виден профессионализм и знание продукта. Спасибо вам огромное!
+
+        .rewievs__btn
+          a(href="#") Больше отзывов
+
+
+    .about-us
+      .about-us__tabs
+        .about-us__tabs-items
+          //a(href="#").about-us__tabs-item.about-us__tabs-item--active О Компании
+          a(href="#").about-us__tabs-item.about-us__tabs-item--active
+            h2 О Компании
+            span /
+          a(href="#").about-us__tabs-item
+            h2 новости
+            span /
+          a(href="#").about-us__tabs-item
+            h2 статьи
+      .about-us__items
+        .about-us__item.about-us__item--active
+          .about-us__item-left
+            .about-us__item-left-txt.
+              Основным направлением завода «Статус» является проектирование и изготовление входных металлических дверей, пластиковых и алюминиевых изделий.
+              <br><br>
+              Так же завод изготавливает на заказ:
+              <br><br>
+              Навесы;<br>
+              Металлические беседки;<br>
+              Гаражные ворота;<br>
+              Летние души;<br>
+              Козырьки;<br>
+              Решетки на окна;<br>
+              Ставни;<br>
+              Заборы и многое другое.<br>
+              Вся продукция имеет гарантию.
+
+            a(href="#").about-us__item-left-link Узнать больше
+
+          .about-us__item-right
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/22.png" alt="img").about-us__item-img.b-lazy
+
+        .about-us__item
+          .about-us__item-left
+            .about-us__item-left-txt.
+              Основным направлением завода «Статус» является проектирование и изготовление входных металлических дверей, пластиковых и алюминиевых изделий.
+              <br><br>
+              Так же завод изготавливает на заказ:
+              <br><br>
+              Навесы;<br>
+              Металлические беседки;<br>
+              Гаражные ворота;<br>
+              Летние души;<br>
+              Козырьки;<br>
+              Решетки на окна;<br>
+              Ставни;<br>
+              Заборы и многое другое.<br>
+              Вся продукция имеет гарантию.
+
+            a(href="#").about-us__item-left-link Узнать больше
+
+          .about-us__item-right
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/22.png" alt="img").about-us__item-img.b-lazy
+
+
+    .partners
+      .block-title
+        h2 Для партнеров
+      .partners__items
+        .partners__item
+          a(href="#").partners__link
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d5.jpg" alt="img").partners__img.b-lazy
+            .partners__caption Дилерам
+        .partners__item
+          a(href="#").partners__link
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d6.jpg" alt="img").partners__img.b-lazy
+            .partners__caption Корпоративным клиентам
+        .partners__item
+          a(href="#").partners__link
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d7.jpg" alt="img").partners__img.b-lazy
+            .partners__caption Строительные организациям
+        .partners__item
+          a(href="#").partners__link
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d8.jpg" alt="img").partners__img.b-lazy
+            .partners__caption Производителям
+        .partners__item
+          a(href="#").partners__link
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/d5.jpg" alt="img").partners__img.b-lazy
+            .partners__caption Дизайнерам и архитекторам
+
+    .contact-us
+      .contact-us__title Поможем подобрать оптимальное  решение для вашего дома и бизнеса
+      .contact-us__content
+        .contact-us__img
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/23.png"  alt="img").b-lazy
+        .contact-us__form
+          form
+            .contact-us__form-inner
+              .contact-us__form-left
+                input(type="text" placeholder="Имя")
+                input.phone(type="text" placeholder="+7 (___) ___ - __ - __")
+                input(type="text" placeholder="E-mail")
+
+              .contact-us__form-right
+                textarea(placeholder="Комментарий к заявке")
+            input(type="submit" value="Получить скидку").contact-us__btn
+            .contact-us__caption Вызов замерщика бесплатен
+
+
+
+
+
+
+  a(href="javascript:void(0)").to-top
+
+
+
+
+
+
+        //.block-img
+        //  picture
+        //    source(
+        //      srcset="" +
+        //      "img/tecknik-img-1.jpg 1x"
+        //    )
+        //    img(alt="img" class="b-lazy"
+        //    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+        //            data-src="img/tecknik-img-1.jpg").block-img__left
+
+
+
+
+
+
+
