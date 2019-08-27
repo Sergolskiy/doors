@@ -2612,7 +2612,7 @@ body.hidden-body{
   }
   &__categories-img {
     width: 100%;
-    transition: 0.3s;
+    transition: 0.3s !important;
   }
   &__categories-caption {
     font-size: $mediumSize;

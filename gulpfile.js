@@ -35,6 +35,7 @@ gulp.task("pug", () => {
     .pipe(p.changed("dist", { extension: ".html" }))
     .pipe(
       p.pug({
+        pretty: true,
         locals: {
           isProduction,
           ...dataFiles
