@@ -1,0 +1,195 @@
+extends _layout
+
+block variables
+  - var pageTitle = "Двери";
+
+block content
+  // Content
+  div.main-wrap
+    //.webp-img(data-webp="img/Rectangle5.webp" data-img="img/Rectangle5.jpg")
+    //.block-top-wrap.webp-img(data-webp="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.webp"
+    //data-img="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.jpg")
+
+    .block-top
+      .catalog.catalog-page-catalog
+        .catalog__search
+          input(type="text" placeholder="Двери белые").catalog__search-field
+          a(href="#").catalog__search-btn
+        .catalog__inner
+          ul.catalog__list
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--title Каталог дверей
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Дверная продукция
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Образцы отделок
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Двери по назначению
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Металлоконструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Кованые изделия
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Окна-Балконы
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Типы конструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Фурнитура
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+      .catalog-page
+        .catalog-page__inner
+          .block-title
+            h2 Двери оптом от производителя
+          .about-us__item-left-txt
+            | Производство дверей — довольно старинный вид производства, популярный во всех цивилизованных странах, в том числе
+            | и в России. Рынок дверей оптом в нашей стране расширяется, однако преимущество российских компаний, имеющих
+            | собственное производство, остается неоспоримым.
+            |<br><br>
+            |Есть ли смысл платить большие суммы поставщикам, когда есть возможность приобрести двери оптом от производителя?
+            |<br><br>
+            | Производственная компания , занимающаяся изготовлением и продажей дверей оптом, сотрудничает с большим
+            | количеством монтажных и строительных организаций, которым необходимо качественные изделия в минимально
+            | короткие сроки. В списке наших изделий, которые мы готовы поставить оптом, можно перечислить:
+            |<br><br>
+            | - межкомнатные двери различного дизайна;<br>
+            | - деревянные глухие двери из МДФ;<br>
+            | - входные двери (усиленные);<br>
+            | - любые наружные двери;<br>
+            | - и многое другое.
+            |<br><br>
+            |А также комплектующие:
+            |<br><br>
+            | - фурнитура;<br>
+            | - погонаж;<br>
+            | - армированное стекло в нарезке.<br>
+            | Мы постоянно расширяем территориальный охват регионов России, куда совершаем поставку дверей оптом.
+            |<br><br>
+            | Преимущества заказа дверей оптом у нас:
+            |<br><br>
+            | качество изделий по адекватным ценам;<br>
+            | производство дверей и погонажных изделий без задержек сроков;<br>
+            | собственная доставка дверей и услуги монтажа;<br>
+            | производство дверей по ГОСТ стандартам для разных проектных решений, в том числе двери оптом нестандартных
+            | размеров.<br>
+            | Производство и продажа дверей оптом — ключевая сфера деятельности ». Специалисты нашей компании знают
+            | и любят свое дело, поэтому при производстве дверей возможность брака минимизирована. Кроме того, качество продукции
+            | достигается в цехах нашего производства множеством современных способов обработки древесины. В этом нам
+            | помогают новейшее оборудование и современные технологии. Но нельзя забывать и о материале, из которого
+            | изготавливаются двери. Наиболее актуальны при производстве дверей — дуб, лиственница, сосна. Эти породы
+            | обладают такими свойствами, как прочность, износостойкость, экологичность, что немаловажно для каждого
+            | российского покупателя.
+            |<br><br>
+            |Сделав заказ в нашей компании, Вы получите качественный товар по отличным ценам!
+            |<br><br>
+
+
+
+
+
+    .bestsellers
+      .block-title.block-title--white
+        h2 Хиты продаж
+      .bestsellers__items.owl-carousel
+        .bestsellers__item
+          a(href="#").bestsellers__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/door.jpg" alt="img").b-lazy
+          .bestsellers__desc
+            a(href="#").bestsellers__title Dveri-termo-05
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка снаружи:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка изнутри:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Уплотнитель двери
+                div "Е" 3 мм. + "D" 9 мм. с 4 сторон
+            .bestsellers__price Цена от 40000 руб.
+          .bestsellers__bottom
+            .bestsellers__buttons
+              //a(href="#").bestsellers__edit
+              a(href="#").bestsellers__like
+              a(href="#").bestsellers__cart
+            .bestsellers__buy
+              a(href="#").bestsellers__link Вызов замерщика
+              a(href="#").bestsellers__link Купить в один клик
+
+        .bestsellers__item
+          a(href="#").bestsellers__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/door.jpg" alt="img").b-lazy
+          .bestsellers__desc
+            a(href="#").bestsellers__title Dveri-termo-05
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка снаружи:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка изнутри:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Уплотнитель двери
+                div "Е" 3 мм. + "D" 9 мм. с 4 сторон
+            .bestsellers__price Цена от 40000 руб.
+          .bestsellers__bottom
+            .bestsellers__buttons
+              //a(href="#").bestsellers__edit
+              a(href="#").bestsellers__like
+              a(href="#").bestsellers__cart
+            .bestsellers__buy
+              a(href="#").bestsellers__link Вызов замерщика
+              a(href="#").bestsellers__link Купить в один клик
+
+        .bestsellers__item
+          a(href="#").bestsellers__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/door.jpg" alt="img").b-lazy
+          .bestsellers__desc
+            a(href="#").bestsellers__title Dveri-termo-05
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка снаружи:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка изнутри:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Уплотнитель двери
+                div "Е" 3 мм. + "D" 9 мм. с 4 сторон
+            .bestsellers__price Цена от 40000 руб.
+          .bestsellers__bottom
+            .bestsellers__buttons
+              //a(href="#").bestsellers__edit
+              a(href="#").bestsellers__like
+              a(href="#").bestsellers__cart
+            .bestsellers__buy
+              a(href="#").bestsellers__link Вызов замерщика
+              a(href="#").bestsellers__link Купить в один клик

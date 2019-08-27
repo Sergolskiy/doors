@@ -1,0 +1,110 @@
+extends _layout
+
+block variables
+  - var pageTitle = "Двери";
+
+block content
+  // Content
+  div.main-wrap
+    //.webp-img(data-webp="img/Rectangle5.webp" data-img="img/Rectangle5.jpg")
+    //.block-top-wrap.webp-img(data-webp="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.webp"
+    //data-img="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.jpg")
+
+    .block-top
+      .catalog.catalog-page-catalog
+        .catalog__search
+          input(type="text" placeholder="Двери белые").catalog__search-field
+          a(href="#").catalog__search-btn
+        .catalog__inner
+          ul.catalog__list
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--title Каталог дверей
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Дверная продукция
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Образцы отделок
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Двери по назначению
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Металлоконструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Кованые изделия
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Окна-Балконы
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Типы конструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Фурнитура
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+      .catalog-page.catalog-page--contact
+        .catalog-page__inner
+          .block-title
+            h2 Контакты
+          .contact-page
+            .contact-page__inner
+              .contact-page__left
+                div
+                  p Адрес: г. Зеленоград, ул. Заводская. Почтовый индекс: 124365
+                  p
+                    |Номер для подробной консультации:
+                    a(href="tel:84957264316")  8(495)726-43-16
+                    br
+                    |Почта-E-mail: doors-okna@mail.ru
+                    br
+                    a(href="tel:+79096496666") +7 (909) 649-66-66
+                    |- мобильный главного мастера цеха.
+                div
+                  h3.contact-page__title Наши реквизиты
+                  div OOO "СТАТУС"
+                  br
+                  br
+                  div ИНН: 65465175
+                  div КПП: 23456987
+                  div ОГРН:12345678
+              .contact-page__right
+                h3.contact-page__title.contact-page__title--center Обратная связь
+                form
+                  .contact-page__form
+                    label.contact-page__label(for="name") Имя
+                      span *
+                    input.contact-page__input(id="name" type="text")
+                    label.contact-page__label(for="mail") Почта или телефон
+                      span *
+                    input.contact-page__input(id="mail" type="text")
+                    label.contact-page__label(for="text") Сообщение
+                      span *
+                    textarea.contact-page__textarea(id="text")
+
+                    input.contact-page__submit(type="submit" value='Оставить сообщение')
+
+            .contact-page__map
+              iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2232.6702865360694!2d37.18471421593912!3d55.97241568061267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b515186dba479b%3A0x59b6cbf516fa4ed5!2z0JfQsNCy0L7QtNGB0LrQsNGPINGD0LsuLCDQl9C10LvQtdC90L7Qs9GA0LDQtCwg0JzQvtGB0LrQstCwLCDQoNC-0YHRltGP!5e0!3m2!1suk!2sua!4v1566910934114!5m2!1suk!2sua' width='600' height='450' style='border:0;')
+
+
+
+
+
+

@@ -1,0 +1,187 @@
+extends _layout
+
+block variables
+  - var pageTitle = "Двери";
+
+block content
+  // Content
+  div.main-wrap
+    //.webp-img(data-webp="img/Rectangle5.webp" data-img="img/Rectangle5.jpg")
+    //.block-top-wrap.webp-img(data-webp="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.webp"
+    //data-img="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.jpg")
+
+    .block-top
+      .catalog.catalog-page-catalog
+        .catalog__search
+          input(type="text" placeholder="Двери белые").catalog__search-field
+          a(href="#").catalog__search-btn
+        .catalog__inner
+          ul.catalog__list
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--title Каталог дверей
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Дверная продукция
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Образцы отделок
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Двери по назначению
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Металлоконструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Кованые изделия
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Окна-Балконы
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Типы конструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Фурнитура
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+      .catalog-page
+        .catalog-page__inner
+          .questions
+            .block-title
+              h2 Часто задаваемые вопросы
+            .questions__items
+              .questions__block
+                a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+                ul.questions__list
+                  li.questions__item.
+                    Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+              .questions__block
+                a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+                ul.questions__list
+                  li.questions__item.
+                    Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+              .questions__block
+                a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+                ul.questions__list
+                  li.questions__item.
+                    Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+              .questions__block
+                a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+                ul.questions__list
+                  li.questions__item.
+                    Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+              .questions__block
+                a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+                ul.questions__list
+                  li.questions__item.
+                    Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+              .questions__block
+                a.questions__btn_toggle(href="javascript:void(0)") Можно ли приехать и самому забрать свой заказ? Куда?
+                ul.questions__list
+                  li.questions__item.
+                    Москва и Московская область. При заказе двери с монтажом, доставка осуществляется бесплатно, количество изделий не должно превышать более 3х.
+
+
+
+
+
+
+    .bestsellers
+      .block-title.block-title--white
+        h2 Хиты продаж
+      .bestsellers__items.owl-carousel
+        .bestsellers__item
+          a(href="#").bestsellers__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/door.jpg" alt="img").b-lazy
+          .bestsellers__desc
+            a(href="#").bestsellers__title Dveri-termo-05
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка снаружи:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка изнутри:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Уплотнитель двери
+                div "Е" 3 мм. + "D" 9 мм. с 4 сторон
+            .bestsellers__price Цена от 40000 руб.
+          .bestsellers__bottom
+            .bestsellers__buttons
+              //a(href="#").bestsellers__edit
+              a(href="#").bestsellers__like
+              a(href="#").bestsellers__cart
+            .bestsellers__buy
+              a(href="#").bestsellers__link Вызов замерщика
+              a(href="#").bestsellers__link Купить в один клик
+
+        .bestsellers__item
+          a(href="#").bestsellers__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/door.jpg" alt="img").b-lazy
+          .bestsellers__desc
+            a(href="#").bestsellers__title Dveri-termo-05
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка снаружи:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка изнутри:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Уплотнитель двери
+                div "Е" 3 мм. + "D" 9 мм. с 4 сторон
+            .bestsellers__price Цена от 40000 руб.
+          .bestsellers__bottom
+            .bestsellers__buttons
+              //a(href="#").bestsellers__edit
+              a(href="#").bestsellers__like
+              a(href="#").bestsellers__cart
+            .bestsellers__buy
+              a(href="#").bestsellers__link Вызов замерщика
+              a(href="#").bestsellers__link Купить в один клик
+
+        .bestsellers__item
+          a(href="#").bestsellers__img
+            img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/door.jpg" alt="img").b-lazy
+          .bestsellers__desc
+            a(href="#").bestsellers__title Dveri-termo-05
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка снаружи:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Отделка изнутри:
+                div Фрезерованная панель Эко-шпона с зеркалом
+            .bestsellers__txt-wrap
+              .bestsellers__txt
+                div Уплотнитель двери
+                div "Е" 3 мм. + "D" 9 мм. с 4 сторон
+            .bestsellers__price Цена от 40000 руб.
+          .bestsellers__bottom
+            .bestsellers__buttons
+              //a(href="#").bestsellers__edit
+              a(href="#").bestsellers__like
+              a(href="#").bestsellers__cart
+            .bestsellers__buy
+              a(href="#").bestsellers__link Вызов замерщика
+              a(href="#").bestsellers__link Купить в один клик
