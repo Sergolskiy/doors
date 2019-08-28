@@ -2972,6 +2972,264 @@ body.hidden-body{
 
 /*************************************************************************/
 
+.all-products {
+  //width: 100%;
+  //margin-left: 15px;
+  //overflow: hidden;
+
+  @media (max-width: 1150px) {
+    margin-left: 0;
+    padding: 0 15px;
+  }
+
+  &__content {
+    padding-top: 20px;
+  }
+
+  &__inner {
+    //padding-bottom: 50px;
+  }
+
+  &__txt {
+    max-width: 1130px;
+    padding: 0 10px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__title {
+    font-size: $mediumSize;
+    margin: 25px 0;
+
+    @media (max-width: 1440px) {
+      font-size: $laptopBigSize;
+    }
+    @media (max-width: 992px) {
+      font-size: $mobileBigSize;
+    }
+  }
+
+  &__desc {
+    font-size: $mobileBigSize;
+    line-height: 30px;
+
+    @media (max-width: 1440px) {
+      font-size: $mobileMediumSize;
+    }
+    @media (max-width: 992px) {
+      font-size: $mobileLightSize;
+    }
+  }
+  &__list {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+
+    @media (max-width: 1440px) {
+      width: 33.3333%;
+    }
+
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+
+    &:hover {
+      transform: translateY(-2px);
+
+      .all-products__img {
+          transform: scale(1.1);
+      }
+    }
+  }
+
+  &__item-top {
+    border: 1px solid #adadad;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item-bottom {
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    @media (max-width: 1440px) {
+      min-height: 50px;
+    }
+  }
+
+  &__name {
+    font-size: $mediumSize;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+
+    @media (max-width: 1600px) {
+      font-size: $laptopMediumSize;
+    }
+    @media (max-width: 1440px) {
+      font-size: $mobileMediumSize;
+    }
+  }
+}
+
+.delivery {
+
+  &__content {
+
+  }
+  &__caption {
+    display: flex;
+
+    a {
+      font-size: $mediumSize;
+      color: $darkblue;
+      font-weight: bold;
+
+      @media (max-width: 1440px) {
+        font-size: $mobileMediumSize;
+      }
+      @media (max-width: 480px) {
+        text-align: center;
+      }
+    }
+  }
+  &__methods {
+    margin-top: 70px;
+    margin-bottom: 120px;
+
+    @media (max-width: 1440px) {
+      margin-top: 60px;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 768px) {
+      margin-top: 40px;
+    }
+  }
+  &__methods-big-title {
+    line-height: 30px;
+    font-size: $mediumSize;
+    @media (max-width: 1440px) {
+      font-size: $lightSize;
+    }
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+  }
+  &__methods-list {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__methods-item {
+    width: 25%;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+  }
+  &__methods-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+
+    @media (max-width: 1440px) {
+      height: 70px;
+    }
+
+    img {
+      height: 100%;
+    }
+  }
+  &__methods-title {
+    text-align: center;
+    line-height: 30px;
+    font-size: $mediumSize;
+    font-weight: bold;
+    margin: 25px 0 30px 0;
+
+    @media (max-width: 1440px) {
+      font-size: $lightSize;
+      margin: 20px 0 25px 0;
+    }
+  }
+  &__methods-caption {
+    text-align: center;
+    line-height: 30px;
+    font-size: $lightSize;
+
+    @media (max-width: 1440px) {
+      line-height: 22px;
+    }
+  }
+
+  &__txt {
+    margin-bottom: 120px;
+
+    @media (max-width: 776px) {
+      margin-bottom: 80px;
+    }
+    @media (max-width: 480px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__txt-title {
+    font-size: $mediumSize;
+    font-weight: bold;
+    margin: 30px 0;
+    @media (max-width: 1440px) {
+      font-size: $mobileMediumSize;
+    }
+  }
+
+  &__txt-desc {
+    font-size: $mediumSize;
+    line-height: 30px;
+
+    @media (max-width: 1440px) {
+      font-size: $mobileMediumSize;
+      line-height: 22px;
+    }
+  }
+}
+
+
 footer {
   background: $darkbrown;
   display: flex;
