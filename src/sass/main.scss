@@ -3228,6 +3228,167 @@ body.hidden-body{
     }
   }
 }
+.go-more-categories-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.auction {
+  &__content {
+    margin-top: 60px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 992px) {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: 1440px) {
+
+    }
+  }
+
+  &__item {
+    max-width: 420px;
+    min-width: 300px;
+    box-shadow: 0px 0px 11px -6px black;
+    margin: 20px;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  &__item-top {
+    padding: 0 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__item-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: $darkblue;
+    font-size: $mediumSize;
+    @media (max-width: 1440px) {
+      font-size: $mobileMediumSize;
+    }
+    @media (max-width: 768px) {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item-img {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 290px;
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      height: 250px;
+    }
+  }
+
+  &__item-center {
+    padding: 15px 10px;
+    box-shadow: 0px -1px 15px -12px black;
+  }
+
+  &__item-caption {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #29292a;
+    font-size: $mobileBigSize;
+  }
+
+  &__item-desc {
+    margin-bottom: 15px;
+  }
+
+  &__item-txt {
+    margin: 5px 0;
+    text-align: center;
+    color: #29292a;
+    font-size: $lightSize;
+
+    @include lightMediaSize;
+
+    //@media (max-width: 768px) {
+    //  font-size: $emobileMediumSize;
+    //}
+  }
+
+  &__item-price {
+    text-align: center;
+    color: $darkblue;
+    font-size: $lightSize;
+  }
+
+  &__item-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+    background: #f8f6f6;
+    box-shadow: 0px -1px 20px -12px black;
+
+    @media (max-width: 768px) {
+      padding: 10px 10px 5px 10px;
+    }
+  }
+
+  &__item-btn {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 40px;
+    transition: 0.3s;
+
+    &--pencil {
+      background-image: url("../img/pencil.png");
+    }
+    &--basket {
+      background-image: url("../img/cart2.png");
+    }
+    &--like {
+      background-image: url("../img/like2.png");
+    }
+
+    &:hover {
+      transform: scale(0.9);
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 15px;
+    }
+  }
+  &__item-spacer {
+    height: 60px;
+    width: 1px;
+    background: $darkblue;
+  }
+}
 
 
 footer {
@@ -3450,9 +3611,14 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 1600px) {
+      width: 50%;
+    }
+    @media (max-width: 1150px) {
+      width: 100%;
+    }
 
     @media (max-width: 840px) {
-      width: 100%;
       align-items: flex-start;
       margin-top: 20px;
     }
@@ -3463,6 +3629,12 @@ footer {
 
     form{
       width: 100%;
+    }
+
+    &--zakaz {
+      @media (max-width: 480px) {
+        margin-top: 0;
+      }
     }
   }
 
@@ -3518,6 +3690,12 @@ footer {
 
     @media (max-width: 840px) {
       align-items: flex-start;
+    }
+
+    &--zakaz {
+      @media (max-width: 840px) {
+        align-items: center;
+      }
     }
   }
 
@@ -3600,16 +3778,31 @@ footer {
     border: 1px solid $darkblue;
     padding: 5px 0;
     margin-bottom: 5px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &__item-wrap{
     display: flex;
     justify-content: center;
     width: 50%;
-    padding: 40px 0 60px;
+    //padding: 40px 0 60px;
+    padding: 40px 15px 60px;
 
     &:first-child{
       border-right: 1px solid $darkblue;
+
+      @media (max-width: 768px) {
+        border-right: 0;
+        border-bottom: 1px solid #365e8c;
+      }
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      padding: 20px 15px 30px;
     }
   }
 
