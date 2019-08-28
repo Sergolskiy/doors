@@ -1,0 +1,99 @@
+extends _layout
+
+block variables
+  - var pageTitle = "Двери";
+
+block content
+  // Content
+  div.main-wrap
+    //.webp-img(data-webp="img/Rectangle5.webp" data-img="img/Rectangle5.jpg")
+    //.block-top-wrap.webp-img(data-webp="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.webp"
+    //data-img="img/stock-photo-back-view-of-happy-family-is-standing-near-their-modern-house-and-hugging-670227178.jpg")
+
+    .block-top
+      .catalog.catalog-page-catalog
+        .catalog__search
+          input(type="text" placeholder="Двери белые").catalog__search-field
+          a(href="#").catalog__search-btn
+        .catalog__inner
+          ul.catalog__list
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--title Каталог дверей
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Дверная продукция
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Образцы отделок
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Двери по назначению
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Металлоконструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Кованые изделия
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Окна-Балконы
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Типы конструкции
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+            li.catalog__item
+              a(href="#").catalog__link.catalog__link--arrow Фурнитура
+              ul.catalog__submenu
+                li.catalog__submenu-list
+                  a(href="#").catalog__submenu-item сабменю
+      .catalog-page
+        .catalog-page__inner
+          .block-title
+            h2 Доставка и Монтаж
+          .delivery__content
+            .delivery__caption
+              a(href="javascript:void(0);") Установка стальных дверей на лучших условиях
+            .delivery__methods
+              .delivery__methods-big-title Способы доставки
+              .delivery__methods-list
+                .delivery__methods-item
+                  .delivery__methods-img
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/deliv.png").b-lazy
+                  .delivery__methods-title Самовывоз
+                  .delivery__methods-caption покупатель забирает товар  непосредственно  в офисе интернет-магазина, на складе или в определенном пункте выдачи заказов
+                .delivery__methods-item
+                  .delivery__methods-img
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/deliv1.png").b-lazy
+                  .delivery__methods-title Бесплатная доставка
+                  .delivery__methods-caption покупатель забирает товар  непосредственно  в офисе интернет-магазина, на складе или в определенном пункте выдачи заказов
+                .delivery__methods-item
+                  .delivery__methods-img
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/deliv2.png").b-lazy
+                  .delivery__methods-title eDost
+                  .delivery__methods-caption покупатель забирает товар  непосредственно  в офисе интернет-магазина, на складе или в определенном пункте выдачи заказов
+                .delivery__methods-item
+                  .delivery__methods-img
+                    img(alt="img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="img/deliv5.png").b-lazy
+                  .delivery__methods-title Почта России
+                  .delivery__methods-caption покупатель забирает товар  непосредственно  в офисе интернет-магазина, на складе или в определенном пункте выдачи заказов
+
+          .delivery__txt
+            .delivery__txt-title Что входит в бесплатную услугу монтажа?
+            .delivery__txt-desc обработка дверного проема;<br>
+              |создание крепежных отверстий;<br>
+              |установка в проеме;<br>
+              |монтаж замков, фурнитуры, доводчиков.<br>
+              |Дополнительная бесплатная услуга — техническое обслуживание два раза в год!
